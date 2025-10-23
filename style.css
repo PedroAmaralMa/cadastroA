@@ -264,6 +264,42 @@ table th, td {
     }
 }
 
+@media (max-width: 768px) {
+    .cadastro-form, .cadastro-banner {
+        flex: 1 1 50%; /* cada lado reduz proporcionalmente */
+        padding: 20px;
+    }
+
+    .cadastro-banner img {
+        width: 70px; /* reduz a logo */
+        top: 10px;
+        left: 10px;
+    }
+
+    .cadastro-banner h1 {
+        font-size: 1.4rem;
+        margin-top: 50px;
+    }
+}
+
+/* Para telas muito pequenas (celular) */
+@media (max-width: 480px) {
+    .cadastro-form, .cadastro-banner {
+        flex: 1 1 50%; /* mantém horizontal */
+        font-size: 0.9rem;
+    }
+
+    .cadastro-banner img {
+        width: 50px;
+        top: 5px;
+        left: 5px;
+    }
+
+    .cadastro-banner h1 {
+        font-size: 1.1rem;
+        margin-top: 40px;
+    }
+}
 /* --- RESTANTE DO CSS ORIGINAL --- */
 .cadastro h1{
     text-shadow: 1px 1px 1px #000000;
